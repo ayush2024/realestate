@@ -1,0 +1,35 @@
+/* .ask{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.side-by-side-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* Separate left and right sides */
+    align-items: center;
+    /* Center vertically */
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.left-side {
+    flex: 1;
+    /* Allow the left side (image) to expand to available space */
+    margin-right: 20px;
+    /* Add spacing between left and right sides */
+}
+
+img {
+    max-width: 50%;
+    /* Ensure the image doesn't overflow its container */
+}
+
+.right-side {
+    flex: 2;
+    /* Allow the right side (form) to take up more space */
+}

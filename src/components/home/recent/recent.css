@@ -1,0 +1,70 @@
+
+
+ .content1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+  height: auto; /* Remove fixed height for mobile devices */
+  padding: 10px; /* Add some padding for spacing between items */
+}
+
+.recent .text {
+  padding: 10px; /* Reduce padding for smaller screens */
+}
+
+.recent .category span {
+  padding: 4px 10px; /* Adjust padding for smaller screens */
+  font-weight: 600;
+  font-size: 12px; /* Reduce font size for smaller screens */
+  display: inline-block;
+}
+
+.recent .category i {
+  font-size: 16px; /* Reduce font size for smaller screens */
+  color: #bec7d8;
+}
+
+.recent p {
+  color: #72809d;
+  font-size: 12px; /* Reduce font size for smaller screens */
+  margin-top: 5px; /* Add some margin for spacing */
+}
+
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 20px; /* Adjust padding for smaller screens */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .content1 {
+    grid-template-columns: 1fr; /* Switch to a single column layout */
+    gap: 15px; /* Reduce the gap between items for smaller screens */
+  }
+
+  .recent .text {
+    padding: 5px; /* Further reduce padding for smaller screens */
+  }
+
+  .recent .category span {
+    padding: 2px 5px; /* Adjust padding for smaller screens */
+    font-size: 10px; /* Reduce font size for smaller screens */
+  }
+
+  .recent .category i {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .recent p {
+    font-size: 10px; /* Reduce font size for smaller screens */
+    margin-top: 3px; /* Adjust margin for smaller screens */
+  }
+
+  .recent .button {
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
+}
